@@ -1,0 +1,28 @@
+[
+  {
+    "id" : 1,
+    "title" : "Dinner Mate",
+    "otherNames" : [
+      "Let's Have Dinner Together; Would you like to have dinner?",
+      "Shall We Eat Dinner Together"
+    ],
+    "country" : "South Korea",
+    "genre" : ["Comedy","Drama","Food","Melodrama","Romance"],
+    "description" : "This drama is about a young woman going through a rough breakup with a longtime boyfriend she’s still in love with, and a young man who’s a serial dater and kind of tired of relationships. They both like to eat out but dislike having to go to nice restaurants alone, and they happen to meet while waiting to be seated at a restaurant, each of them alone. The hostess mistakes them for a couple and offers them a couple special, which prompts them to sit together and end up having dinner together. After their first unexpected meeting, they meet and have dinner together weekly. That’s how they strike up an unusual friendship where they get together just to eat out, and over multiple dinners, they open up to each other about their relationship troubles and grow closer. ~~ Adapted from the webcomic \"Jeonyeok Kati Deusilraeyo?\"",
+    "status" : 0,
+    "views" : 185915,
+    "casts" : ["Seo Ji Hye", "Song Seung Heon"]
+  },
+  {
+    "id" : 2,
+    "title" : "Hotel Del Luna",
+    "otherNames" : [],
+    "country" : "South Korea",
+    "genre" : ["Action","Drama","Romance"],
+    "description" : "Jang Man Wol is the CEO of Hotel del Luna. The hotel is situated in downtown in Seoul and has a very old appearance. She made a big error many years ago and, because of this, she has been stuck at Hotel del Luna. She is beautiful, but she is fickle, suspicious and greedy. Goo Chan Sung worked as the youngest assistant manager ever at a multinational hotel corporation. He is a sincere perfectionist. He looks level-headed, but he actually has a soft disposition. Due to an unexpected case, he begins to work as a manager at Hotel del Luna. The hotel's clientele consists of ghosts.",
+    "status" : 1,
+    "views" : 17467887,
+    "casts" : ["IU", "Yeo Jin Goo"]
+  }
+
+]
