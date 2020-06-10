@@ -17,6 +17,8 @@ export class AboutComponent implements OnInit {
 
   dramas : Array<DramaInfo> = new Array();
 
+  selectedDrama : DramaInfo;
+
   constructor(private dramaService : DramaService) { }
 
   ngOnInit(): void {
@@ -57,8 +59,8 @@ export class AboutComponent implements OnInit {
     }
   }
 
-  popUp(id){
-    alert(id);
+  popUp(drama){
+    this.selectedDrama = drama;
   }
 
 }

@@ -1,5 +1,11 @@
+import { Observable, of } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';  // Import it up here
+import { HttpClient, HttpHeaderResponse, HttpHeaders } from '@angular/common/http';  // Import it up here
+import { catchError, tap } from 'rxjs/operators';
+
+const httpOptions = {
+  headers : new HttpHeaders({'Content-Type' : 'application/json'})
+};
 
 @Injectable({
   providedIn: 'root'
@@ -10,8 +16,23 @@ export class CoronaService {
 
   constructor(private http:HttpClient) { }
 
-  getCurrentUpdate(){
-    return this.http.get(this.httpUrl);
+  private handleError<T> (operation = 'operation', result?:T) {
+    return (error: any) : Observable<T> =>{
+      console.error(error, `Operation: ${operation}`);
+
+      return of(result as T);
+    }
+  }
+
+  getCurrentUpdate() : Observable<Object>{
+    return this.http.get(this.httpUrl)
+    .pipe(
+      tap(
+        objects => console.log(`Successfully fetched!`)
+        ),catchError(
+        this.handleError('getCurrentUpdate',[])
+        )
+    );
   };
 
 }

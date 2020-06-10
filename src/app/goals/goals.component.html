@@ -1,4 +1,11 @@
 <div>
+
+  <div *ngIf="drama">
+    <div>{{drama.title}}</div>
+    <div>{{drama.country}}</div>
+    <div *ngFor="let g of drama.genre">{{g}}</div>
+  </div>
+
   <input type="text" name="item" [(ngModel)] = 'inputItem'>
   <button (click) ="addGoals()">Submit</button>
 

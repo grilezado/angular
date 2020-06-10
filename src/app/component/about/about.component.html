@@ -23,7 +23,7 @@
       </div>
 
       <div class="daily-content" *ngIf="fragment === 1">
-        <div *ngFor="let drama of dramas" class="banner" (click)="popUp(drama.id)" >
+        <div *ngFor="let drama of dramas" class="banner" (click)="popUp(drama)" >
           <img src="https://i.pinimg.com/236x/c6/e7/7d/c6e77d22e7ed4a4808648f94a6af3da0.jpg" alt="Girl in a jacket" width="80px" height="100px">
           <div class="description">
             <span class="banner-title">{{drama.title}}</span>
@@ -76,5 +76,6 @@
   </div> -->
   <!-- endof right-side -->
 
+  <app-goals [drama] = "selectedDrama"></app-goals>
 
 </div>
