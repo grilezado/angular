@@ -1,0 +1,33 @@
+
+header {
+  background: #7700FF;
+}
+header .logo {
+  font-weight: bold;
+}
+
+header nav {
+  justify-self: right;
+}
+header nav ul{
+  list-style-type: none;
+  display: flex; /* or float: left */
+  margin: 0;
+  padding: 0;
+}
+header nav a {
+  padding: 1.5em;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+header nav a:hover {
+  background: #8E2BFF;
+}
+.active{
+  height : 2px;
+  width : 10 rem;
+  background-color: #fff;
+  position : absolute;
+  bottom : -1rem;
+  transition : transform .6s;
+}

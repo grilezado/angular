@@ -1,0 +1,10 @@
+<div>
+  <input type="text" name="item" [(ngModel)] = 'inputItem'>
+  <button (click) ="addGoals()">Submit</button>
+
+  <div>
+    <p *ngFor="let goal of goals; let i" (click)= "removeItem(i)">
+      <span>{{goal}}</span>
+    </p>
+  </div>
+</div>

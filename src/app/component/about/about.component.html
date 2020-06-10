@@ -1,0 +1,80 @@
+<div id="main-page">
+  <div class="content-page">
+    <div class="banner">
+      <img src="https://kissasian.sh/Uploads/Etc/5-29-2020/7806672.jpg" alt="Girl in a jacket" width="150" height="195">
+        <div style="display: inline-block;" class="description">
+          <span class="banner-title">Dinner Mate</span>
+          <span class="banner-info">Country: <a href="/Country/South-Korea"> South Korea</a></span>
+          <span class="banner-info">Genres: Comedy, Drama</span>
+          <span class="banner-info">This drama is about a young woman going
+            through a rough breakup with a longtime boyfriend she’s still in
+            </span>
+        </div>
+    </div>
+      <!-- endof banner -->
+
+    <div class="daily-list">
+      <div class="options-wrapper">
+        <button (click)="list(1)">New Drama</button>
+        <button (click)="list(2)">Top Today</button>
+        <button (click)="list(3)">Top Week</button>
+        <button (click)="list(4)">Top Month</button>
+        <button (click)="list(5)">Most Popular</button>
+      </div>
+
+      <div class="daily-content" *ngIf="fragment === 1">
+        <div *ngFor="let drama of dramas" class="banner" (click)="popUp(drama.id)" >
+          <img src="https://i.pinimg.com/236x/c6/e7/7d/c6e77d22e7ed4a4808648f94a6af3da0.jpg" alt="Girl in a jacket" width="80px" height="100px">
+          <div class="description">
+            <span class="banner-title">{{drama.title}}</span>
+            <span class="banner-info">Country: {{drama.country}} </span>
+            <span class="banner-info">Genre: Action, Drama, Comedy </span>
+              <!-- <a href="/Country/South-Korea"> South Korea</a></span> -->
+            <span class="banner-info"> </span>
+          </div>
+        </div>
+      </div>
+      <!-- endof fragment 1 -->
+
+      <div *ngIf="fragment === 2">
+        <div *ngFor="let item of items" class="banner" >
+          <img src="https://kissasian.sh/Uploads/Etc/4-2-2020/5868972.jpg" alt="Girl in a jacket" width="150" height="195">
+          <div class="description">
+            <span class="banner-title">Amensalism</span>
+            <span class="banner-info">Country: <a href="/Country/South-Korea"> South Korea</a></span>
+            <span class="banner-info">Genres: Fantasy, Thriller</span>
+            <span class="banner-info">At the age of ten, Cheng You Kuan experienced an event that would alter the course of his life forever. The sole survivor or a terrible accident, You Kuan was so traumatized by the event, that every night since, he has dreams of death.
+              </span>
+          </div>
+        </div>
+      </div>
+      <!-- endof fragment 2 -->
+
+    </div>
+    <!-- endof daily-list -->
+  </div>
+  <!-- endof content-page -->
+  <!-- <div class="right-side">
+
+    <div class="right-box">
+      <div class="box-title"><span>Ongoing series</span></div>
+      <div class="box-info" *ngFor="let item of onGoing">
+        <img src="https://kissasian.sh/Content/images/bullet.png" alt="">
+        <span>Mom Has an Affair Episode 22</span>
+      </div>
+    </div>
+    <!-- endof -->
+
+    <!-- <div class="right-box">
+      <div class="box-title"><span>Latest Update</span></div>
+      <div class="box-info" *ngFor="let item of onGoing">
+        <img src="https://kissasian.sh/Content/images/bullet.png" alt="">
+        <span>Mom Has an Affair Episode 22</span>
+      </div>
+    </div>
+
+  </div> --> -->
+  <!-- endof right-side -->
+
+
+</div>
